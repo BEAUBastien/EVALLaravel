@@ -13,7 +13,7 @@ giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="a
  <body>
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
  <div class="container-fluid">
- <a class="navbar-brand" href="/">French cook</a>
+ <a class="navbar-brand" href="{{ route('accueil')}}">French cook</a>
  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bstarget="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 aria-label="Toggle navigation">
  <span class="navbar-toggler-icon"></span>
@@ -21,10 +21,10 @@ aria-label="Toggle navigation">
  <div class="collapse navbar-collapse" id="navbarSupportedContent">
  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
  <li class="nav-item">
- <a class="nav-link active" aria-current="page" href="{{ 'liste' }}">Les recettes</a>
+ <a class="nav-link active" aria-current="page" href="{{ route('liste_recette') }}">Les recettes</a>
  </li>
  <li class="nav-item">
- <a class="nav-link active" href="{{ 'ajouter' }}">Ajouter une recette</a>
+ <a class="nav-link active" href="{{ route('ajouter') }}">Ajouter une recette</a>
  </li>
  <li class="nav-item">
  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -39,7 +39,7 @@ class="bi bi-envelope-open" viewBox="0 0 16 16">
 ?? '' }}</a>
  </li>
  </ul>
- <form class="d-flex" action="{{ ‘recherche }}">
+ <form class="d-flex" action="{{  route('recherche') }}">
  <input class="form-control me-2" name="search" type="search" placeholder="ingredient ?"
 aria-label="Search">
  <button class="btn btn-outline-success" type="submit">Recherche</button>
